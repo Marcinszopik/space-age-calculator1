@@ -1,6 +1,9 @@
 export class Person {
-  constructor(age){
+  constructor(age,country){
     this.age = age;
+    this.country = country;
+   
+
   }
 
   ageOnMercury() {
@@ -25,6 +28,27 @@ export class Person {
    // const porp = 100 / 11.86
     this.age /= 11.86;
     return Math.floor(this.age);
-  }   
+
+  }
+
+  yearsExpectedToLiveOnEarth() {
+    if (this.country === "Spain") {
+      return 83 - this.age
+  } else if (this.country === "Sweden"){
+    return 82 - this.age 
+
+  } else if (this.country === "Russia") {
+    return 72 -this.age
+  }
 
 }
+
+
+
+    
+      
+      
+}
+
+
+

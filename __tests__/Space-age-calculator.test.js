@@ -25,4 +25,25 @@ describe("Person", () => {
     const person = new Person(40);
     expect(person.ageOnJupiter()).toEqual(3);
   });
+
+
+  test("should tell us life expcectancy if you are from Spain", () => {
+    const person = new Person(40, "Spain");
+    expect(person.yearsExpectedToLiveOnEarth()).toEqual(43);
+  });
+
+  test("should tell us life expcectancy if you are from Sweden", () => {
+    const person = new Person(40, "Sweden");
+    expect(person.yearsExpectedToLiveOnEarth()).toEqual(42);
+  });
+ 
+  test("should tell us life expcectancy if you are form Russia", () => {
+    const person = new Person(40, "Russia");
+    expect(person.yearsExpectedToLiveOnEarth()).toEqual(32);
+  });
+
+  
 });
+
+
+
